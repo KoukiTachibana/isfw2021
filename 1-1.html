@@ -14,6 +14,7 @@
             execSelect();
         }
 
+
         async function execSelect() {
             var sql = 'select * from Tweets order by time desc limit 20';
             var objects = await osql.connect(sql);
